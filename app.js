@@ -1,8 +1,10 @@
 const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 const https = require("https");
-import apikey from "./apikey";
+var apikey=process.env.APIKEY;
+
 
 //
 
@@ -45,7 +47,7 @@ app.post("/", function (req, res) {
     const options = {
 
         method: "POST",
-        auth: {apikey}
+        auth: process.env.APIKEY
     }
 
 
