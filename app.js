@@ -44,7 +44,7 @@ app.post("/", function (req, res) {
     const options = {
 
         method: "POST",
-        auth: "kartik1:l5f69ca0a82411b640a539555a6c9bf1d-us9"
+        auth: "kartik1:5f69ca0a82411b640a539555a6c9bf1d-us9"
     }
 
 
