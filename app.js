@@ -2,6 +2,7 @@ const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
 const https = require("https");
+import apikey from "./apikey";
 
 //
 
@@ -44,7 +45,7 @@ app.post("/", function (req, res) {
     const options = {
 
         method: "POST",
-        auth: "kartik1:3f844ac46bb17b74b3c8182b69d01b99-us9"
+        auth: {apikey}
     }
 
 
