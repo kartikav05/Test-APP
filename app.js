@@ -3,7 +3,7 @@ const request = require("request");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const https = require("https");
-var apikey=process.env.APIKEY;
+
 
 
 //
